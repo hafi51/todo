@@ -1,1 +1,0 @@
-alert("due to exams can't complete")
