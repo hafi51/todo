@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fav.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <title>To Do</title>
 </head>
 
 <body>
     <section>
-        <div>
+        <div style="margin-top: 8px;">
             <input type="text" placeholder="Enter Item" id="item">
             <button onclick="addTodo()">Add Item</button>
             <button onclick="delAll()">Delete All</button>
+
         </div>
-        <div>
+        <div class="todo">
             <ul id="list">
 
             </ul>

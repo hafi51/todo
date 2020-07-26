@@ -5,28 +5,39 @@ list = document.getElementById('list')
 function addTodo() {
     todoItem = document.getElementById('item')
         //li
-    li = document.createElement('li')
-    liText = document.createTextNode(todoItem.value)
-    li.appendChild(liText)
+    if (todoItem.value != "") {
+        li = document.createElement('li')
+        liText = document.createTextNode(todoItem.value)
+        li.setAttribute('class', 'li')
+        li.appendChild(liText)
+        li.appendChild(editBtn)
+        li.appendChild(delBtn)
+        list.appendChild(li)
+        todoItem.value = ""
+    } else {
+        alert("Enter Value.")
+    }
 
     // del btn
     delBtn = document.createElement('button')
     delText = document.createTextNode('Delete')
     delBtn.appendChild(delText)
     delBtn.setAttribute('onclick', 'delItem(this)')
+        // delBtn.setAttribute('class', 'liBtn')
 
     //edit btn
     editBtn = document.createElement('button')
     editText = document.createTextNode('Edit Item')
     editBtn.appendChild(editText)
     editBtn.setAttribute('onclick', 'editItem(this)')
+    editBtn.setAttribute('class', 'liBtn')
 
 
 
-    li.appendChild(editBtn)
-    li.appendChild(delBtn)
-    list.appendChild(li)
-    todoItem.value = ""
+    // li.appendChild(editBtn)
+    // li.appendChild(delBtn)
+    // list.appendChild(li)
+    // todoItem.value = ""
 
 }
 

@@ -59,3 +59,25 @@ button {
     font-size: 15px;
     box-shadow: -1px -1px 6px rgba(255, 255, 255, 0.9), 4px 4px 9px rgba(0, 0, 0, 0.3);
 }
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    /* list-style: none; */
+    padding-bottom: 30px;
+}
+
+.li {
+    color: #544949;
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+}
+
+
+/* .liBtn {
+    margin-left: 50px;
+    /* float: right; 
+} */
