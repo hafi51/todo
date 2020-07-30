@@ -52,7 +52,9 @@ function editItem(e) {
     e.parentNode.firstChild.removeAttribute("disabled")
     e.parentNode.firstChild.focus() 
 }
-// function outfocus(e){
+// function outfocus(){
 //     console.log("in outfocus")
-//     e.parentNode.firstChild.setAttribute("disabled","")
+//     a = document.getElementsByTagName("input")
+//     console.log(a)
+//     a.setAttribute("disabled","")
 // }

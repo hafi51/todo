@@ -6,8 +6,8 @@ body {
     text-decoration: none;
     list-style: none;
     color: #6a6a6a;
-    background: url(background.png);
-    background-size: 100%;
+    background: no-repeat url(background.png);
+    background-size: 100% 100vh;
     caret-color: #e6e6e6;
 }
 
