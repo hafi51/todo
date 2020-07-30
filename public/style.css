@@ -3,11 +3,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
     text-decoration: none;
     list-style: none;
     color: #6a6a6a;
-    /* background: linear-gradient(to right, rgba(2, 0, 36, 1) 0%, rgba(26, 161, 155, 1) 0%, rgba(0, 212, 255, 1) 100%); */
+    background: url(background.png);
+    background-size: 100%;
 }
 
 section {
@@ -17,12 +17,12 @@ section {
     background: #f0f0f0;
     border-radius: 5px;
     padding: 10px;
+    overflow: hidden;
     box-shadow: -1px -1px 6px rgba(255, 255, 255, 0.9), 4px 4px 9px rgba(0, 0, 0, 0.3);
     background: linear-gradient(to right, rgba(2, 0, 36, 1) 0%, rgba(26, 161, 155, 1) 0%, rgba(0, 212, 255, 1) 100%);
 }
 
 #item {
-    /* display: flex; */
     align-items: center;
     width: 130px;
     height: 30px;
@@ -35,7 +35,8 @@ section {
     background: transparent;
     border-bottom: 2px solid green;
     transition: 0.2s;
-    color: #544949
+    color: #544949;
+    caret-color: black;
 }
 
 #item:focus {
@@ -59,6 +60,11 @@ button {
     font-size: 15px;
     box-shadow: -1px -1px 6px rgba(255, 255, 255, 0.9), 4px 4px 9px rgba(0, 0, 0, 0.3);
 }
+button:hover{
+    transition: 0.5s;
+    color: #e6e6e6;
+    background-color: #03a9f4;
+}
 
 .todo {
     display: flex;
@@ -66,18 +72,45 @@ button {
 }
 
 ul {
-    /* list-style: none; */
     padding-bottom: 30px;
 }
 
 .li {
+    margin: 0px 0px 7px 0px;
+    width: 100%;
+    list-style: none;
+}
+.input{
+    align-items: center;
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+    margin-left: -30px;
+    margin-top: 5px;
+    overflow: hidden;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    background: transparent;
+    border-bottom: 2px solid #544949;
+    transition: 0.2s;
     color: #544949;
-    margin: 0px 10px 0px 10px;
+    outline: none;
+}
+.input:focus {
+    border-bottom: 2px solid greenyellow;
+    outline: none;
     font-size: 20px;
 }
 
-
-/* .liBtn {
-    margin-left: 50px;
-    /* float: right; 
-} */
+.liBtn {
+    margin: 0px 4px 0px 15px;
+    font-size: 13px;
+    background-color: #03a9f4;
+    color: #e6e6e6;
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.9), 5px 5px 9px rgba(0, 0, 0, 0.3);
+}
+.liBtn:hover{
+    color: #6a6a6a;
+    background-color: #efefef;
+}
