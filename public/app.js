@@ -3,6 +3,19 @@ list = document.getElementById('list')
 
 function addTodo() {
     todoItem = document.getElementById('item')
+        // del btn
+        delBtn = document.createElement('button')
+        delText = document.createTextNode('Delete')
+        delBtn.appendChild(delText)
+        delBtn.setAttribute('onclick', 'delItem(this)')
+        delBtn.className += "liBtn"
+    
+        //edit btn
+        editBtn = document.createElement('button')
+        editText = document.createTextNode('Edit Item')
+        editBtn.appendChild(editText)
+        editBtn.setAttribute('onclick', 'editItem(this);')
+        editBtn.setAttribute('class', 'liBtn')
     
         //li input
     if (todoItem.value != "") {
@@ -22,20 +35,6 @@ function addTodo() {
     } else {
         alert("Enter Value.")
     }
-
-    // del btn
-    delBtn = document.createElement('button')
-    delText = document.createTextNode('Delete')
-    delBtn.appendChild(delText)
-    delBtn.setAttribute('onclick', 'delItem(this)')
-    delBtn.className += "liBtn"
-
-    //edit btn
-    editBtn = document.createElement('button')
-    editText = document.createTextNode('Edit Item')
-    editBtn.appendChild(editText)
-    editBtn.setAttribute('onclick', 'editItem(this);')
-    editBtn.setAttribute('class', 'liBtn')
 }
 
 function delAll() {
