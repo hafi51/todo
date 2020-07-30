@@ -14,7 +14,6 @@ function addTodo() {
         inputField.setAttribute("id","inputField")
         inputField.setAttribute("class","input")
         inputField.setAttribute("disabled","")
-        // inputField.setAttribute("onmouseout","outfocus(this)")
         li.appendChild(inputField)
         li.appendChild(editBtn)
         li.appendChild(delBtn)
@@ -37,7 +36,6 @@ function addTodo() {
     editBtn.appendChild(editText)
     editBtn.setAttribute('onclick', 'editItem(this);')
     editBtn.setAttribute('class', 'liBtn')
-
 }
 
 function delAll() {
@@ -51,10 +49,11 @@ function delItem(e) {
 function editItem(e) {
     e.parentNode.firstChild.removeAttribute("disabled")
     e.parentNode.firstChild.focus() 
+    e.innerHTML = "Update"
+    e.setAttribute('onclick', 'updateItem(this);')
 }
-// function outfocus(){
-//     console.log("in outfocus")
-//     a = document.getElementsByTagName("input")
-//     console.log(a)
-//     a.setAttribute("disabled","")
-// }
+function updateItem(e){
+    e.innerHTML = "Edit Item"
+    e.parentNode.firstChild.setAttribute("disabled","")
+    e.setAttribute('onclick', 'editItem(this);')
+}
