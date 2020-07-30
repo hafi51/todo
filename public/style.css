@@ -8,13 +8,13 @@ body {
     color: #6a6a6a;
     background: url(background.png);
     background-size: 100%;
+    caret-color: #e6e6e6;
 }
 
 section {
     display: block;
     width: 350px;
     height: 400px;
-    background: #f0f0f0;
     border-radius: 5px;
     padding: 10px;
     overflow: hidden;
@@ -36,7 +36,6 @@ section {
     border-bottom: 2px solid green;
     transition: 0.2s;
     color: #544949;
-    caret-color: black;
 }
 
 #item:focus {
