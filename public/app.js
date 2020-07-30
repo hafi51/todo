@@ -1,4 +1,4 @@
-//alert("due to exams can't complete")
+alert("due to exams can't complete")
 list = document.getElementById('list')
 
 
