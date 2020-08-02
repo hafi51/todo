@@ -13,15 +13,25 @@ body {
 
 section {
     display: block;
-    width: 350px;
+    width: 358px;
     height: 400px;
     border-radius: 5px;
     padding: 10px;
-    overflow: hidden;
+    overflow-y: scroll;
     box-shadow: -1px -1px 6px rgba(255, 255, 255, 0.9), 4px 4px 9px rgba(0, 0, 0, 0.3);
     background: linear-gradient(to right, rgba(2, 0, 36, 1) 0%, rgba(26, 161, 155, 1) 0%, rgba(0, 212, 255, 1) 100%);
 }
-
+section::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+  }
+section::-webkit-scrollbar-thumb{
+    background-color: #607D8B;
+    border-radius: 20px;
+}
+section::-webkit-scrollbar-track{
+    background-color: transparent;
+}
 #item {
     align-items: center;
     width: 130px;
