@@ -10,7 +10,7 @@ body {
     background-size: 100% 100vh;
     caret-color: #e6e6e6;
 }
-
+label{visibility: hidden;}
 section {
     display: block;
     width: 358px;

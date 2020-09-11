@@ -8,6 +8,23 @@
     <link rel="icon" href="fav.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <title>To Do</title>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyC0COqYWqh3t_ynfVnI8vRwysYTT9ImbjQ",
+    authDomain: "todobymuaz.firebaseapp.com",
+    databaseURL: "https://todobymuaz.firebaseio.com",
+    projectId: "todobymuaz",
+    storageBucket: "todobymuaz.appspot.com",
+    messagingSenderId: "997737694855",
+    appId: "1:997737694855:web:f4a53fd4ab9cf0e7891a22",
+    measurementId: "G-GMX8470JDK"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </head>
 
 <body>
@@ -24,6 +41,10 @@
             </ul>
         </div>
     </section>
+
+
+
+
 
     <script src="app.js"></script>
 </body>
